@@ -1,8 +1,13 @@
 class AreaSerializer < ActiveModel::Serializer
-  attributes :id, :name, :concerns
+  attributes :id, :name, :concerns, :categories
 
-  def category 
-    object.category.name
+  def categories
+    object.categories.map do |cat|
+      {
+        'name' => cat.name,
+        'id' => cat.id
+      }
+    end 
   end 
   def concerns
     object.area_concerns.map do |ac|
