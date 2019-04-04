@@ -97,8 +97,9 @@ ActiveRecord::Schema.define(version: 2019_04_03_101218) do
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "scientific_name"
+    t.text "suited_formulas"
     t.string "image"
-    t.string "type"
+    t.string "category"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
