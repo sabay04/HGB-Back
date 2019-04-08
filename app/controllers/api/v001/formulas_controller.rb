@@ -1,5 +1,5 @@
 class Api::V001::FormulasController < ApplicationController
-    before_action :find_ingredient only: [ :update, :destroy]
+    before_action :find_formula, only: [ :update, :destroy]
 
     # full crud 
     def index
@@ -67,7 +67,11 @@ class Api::V001::FormulasController < ApplicationController
 
     def destroy
         # @formula = Formula.find(params[:id])
-        @formula.destroy
+       if @formula.destroy
+        render json: "deletion successful"
+       else 
+        render json: 'deletetion unsucessfull'
+       end 
     end 
 
 
