@@ -68,9 +68,9 @@ class Api::V001::FormulasController < ApplicationController
     def destroy
         # @formula = Formula.find(params[:id])
        if @formula.destroy
-        render json: "deletion successful"
+        render json: @formula
        else 
-        render json: 'deletetion unsucessfull'
+        render json: @formula.errors.full_messages
        end 
     end 
 
