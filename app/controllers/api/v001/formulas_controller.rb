@@ -19,12 +19,12 @@ class Api::V001::FormulasController < ApplicationController
                 @ingredient = Ingredient.find_by(name: ing[:name])
                 FormulaIngredient.create(formula_id: @formula.id, ingredient_id: @ingredient.id, percentage: ing[:percent])
             end 
-            # params[:concerns].map do |concern| 
-            #     @concern = Concern.find_by(name: concern)
-            #     FormulaConcern.create(formula_id: @formula.id, concern_id: @concern.id)
-            # end 
-            @concern = Concern.find_by(name: params[:concerns])
-            FormulaConcern.create(formula_id: @formula.id, concern_id: @concern.id)
+            params[:concerns].map do |concern| 
+                @concern = Concern.find(concern)
+                FormulaConcern.create(formula_id: @formula.id, concern_id: @concern.id)
+            end 
+            # @concern = Concern.find_by(name: params[:concerns])
+            # FormulaConcern.create(formula_id: @formula.id, concern_id: @concern.id)
 
         render json: @formula 
 
