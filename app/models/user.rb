@@ -6,7 +6,7 @@ class User < ApplicationRecord
     has_many :favourites
     has_many :formulas, through: :favourites
     has_secure_password
-    
+    validates :username, uniqueness: { case_sensitive: false }
   
 
 end
