@@ -1,5 +1,5 @@
 class Api::V001::UsersController < ApplicationController
- wrap_parameters :user, include: [:username, :email, :password]
+ wrap_parameters :user, include: [:username, :email, :password, :image]
  
  skip_before_action :authorized, only: [:create]
  
@@ -51,7 +51,7 @@ class Api::V001::UsersController < ApplicationController
     private 
 
     def user_params
-      params.require(:user).permit(:username, :password, :email)
+      params.require(:user).permit(:username, :password, :email, :image)
     end 
     
     
