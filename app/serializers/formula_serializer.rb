@@ -1,6 +1,21 @@
 class FormulaSerializer < ActiveModel::Serializer
-  attributes :id, :title, :image, :description, :concerns ,:directions , :user_id, :category, :category_id,:area, :ingredients
+  attributes :id, :title, :image, :description, :concerns ,:directions, :category, :category_id,:area, :ingredients, :user
   
+
+
+  
+
+  def user 
+    formulaUser = User.all.find do | user | 
+        user.id == object.user_id
+    end 
+
+    {'username'=> formulaUser.username,
+      'id' => formulaUser.id}
+  end 
+
+ 
+
   def category 
     object.category.name
   end 
