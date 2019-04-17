@@ -31,7 +31,7 @@ users = User.create([
 
 
 ingredients = Ingredient.create([
-    {name:'Shea Butter' , scientific_name:'Vitellaria paradoxa', image:'http://dg.lnwfile.com/324yi4.jpg' , category:'Butter' , description: 'Shea Butter is extracted from the Kartie tree which predominently grows in Ghana. This butter is known for its moisturising properties', suited_formulas:'Lip care, hair care, body creams, body scrubs, balms.'},
+    {name:'Shea Butter' , scientific_name:'Vitellaria paradoxa', image:'http://dg.lnwfile.com/324yi4.jpg' , category:'Butter' , description: 'Shea Butter is extracted from the Kartie tree which predominantly grows in Ghana. This butter is known for its moisturising properties', suited_formulas:'Lip care, hair care, body creams, body scrubs, balms.'},
     {name: 'Almond Oil' , scientific_name: 'Prunus dulcis oil', image: 'https://cdn.pixabay.com/photo/2018/05/17/12/31/almond-3408470_960_720.jpg' , category:'Carrier Oil'  , description: 'Almond oil is one of the best sources of vitamin E. This oil is great for skin elasticity and a youthful apperance. Great for hair care',suited_formulas:'Lip balms, hair oil, hair conditioners, hair masks, scrubs, body butters, face creams, face serums.' },
     {name: 'Argan Oil', scientific_name: 'Argania spinosa kernel oil' , image: 'https://media.istockphoto.com/photos/argan-seeds-for-the-production-of-oil-picture-id865310964?k=6&m=865310964&s=612x612&w=0&h=VuYnM7ini-pYy_JDmhc61N2HeXIMnxz7ALqduFptW4w=', category:'Carrier Oil'  , description: 'Oil is derived from the argan nut found mainly in Morocco. Great for hair and skin',suited_formulas:'Face and neck prodcuts, hair care products.'},
     {name: 'Rose Water', scientific_name: 'Rosa damascena distillate', image:'https://images.unsplash.com/photo-1548015461-1e85b2db2b12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80' , category:'Hydrosol'  , description:'Rose water is a great alternative to distilled water. It is very gentle and rejuvenating',suited_formulas: 'Toners, mists, cleansers, shampoos, masks, creams'  },
@@ -40,7 +40,18 @@ ingredients = Ingredient.create([
     {name: 'Honey', scientific_name:'Apis mellifera' , image:'https://www.maxpixel.net/static/photo/1x/Beehive-Honey-Bees-Honeycomb-Honey-Bees-Combs-345628.jpg' , category: 'Humectant' , description:'Honey is a humectant which means it attract and traps moisture in your skin and hair.', suited_formulas: 'Face masks, hair masks.' },
     {name: 'Activated Charcoal', scientific_name: 'Active charcoal', image:'https://farm5.staticflickr.com/4791/25840116007_acafaa5710_b.jpg' , category:'Powder'  , description:'Very absorbent and helps to clean the skin', suited_formulas: 'Face masks, body masks, hair masks, cleansing balms' },
     {name: 'Bentonite Clay', scientific_name: 'Montmorillonite', image:'https://cdn.shopify.com/s/files/1/0067/3362/products/Illite_clay2_sm_1024x1024_3b96653e-c7ce-4ca2-bea7-88fa02d57a5d_grande.jpeg?326', category: 'Clay' , description:'Bentonite clay is great for detoxifying. It draws out metals and toxins in the skin and hair', suited_formulas:'Face masks, body masks, hair masks, cleansing balms' },
-    {name: 'Coconut Oil', scientific_name:'Cocos nuciferus oil' , image:'https://cdn.pixabay.com/photo/2017/08/06/12/53/coconut-2592257_960_720.jpg' , category:'Carrier oil'  , description:'Great moisturising effect, makes a good base for many products', suited_formulas: 'Creams, lip care, body butters, hair masks, face masks, body scrubs' }
+    {name: 'Coconut Oil', scientific_name:'Cocos nuciferus oil' , image:'https://static01.nyt.com/images/2015/12/22/health/well_coconut/well_coconut-articleLarge.jpg?quality=90&auto=webp' , category:'Carrier oil'  , description:'Great moisturising effect, makes a good base for many products', suited_formulas: 'Creams, lip care, body butters, hair masks, face masks, body scrubs' },
+    {name:'Rhassoul clay' , scientific_name:'Rhassoul', image:'https://i.etsystatic.com/14618399/r/il/9a8c3c/1162469620/il_794xN.1162469620_oi5p.jpg' , category:'Clay', description: 'Rhassoul is a reddish brown clay that has strong cleansing properties. It is high in magnesium, potassium and calcium.', suited_formulas:'Face masks,hair masks,hair cleansers'},
+    {name:'Almond meal' , scientific_name:'Prunus amygdalus powder', image:'https://cdn.shopify.com/s/files/1/2483/3766/products/NAKED_FOODS_ECOMM_DAY2_75_1bce7069-9f77-4953-b12b-805a1041ed5e_1280x1280.jpg?v=1523243436' , category:'Exfoliant' , description: 'Almond meal has a soft powdery texture which makes it idea for gentle exfoliation', suited_formulas:'face polishes, face scrubs, body scrubs'},
+    {name:'Mineral Salts' , scientific_name:'Sodium chloride', image:'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pinch-himalayan-pink-salt-on-wooden-rustic-table-royalty-free-image-611067718-1552314749.jpg' , category:'Exfoliant' , description: 'Salts such as himalayan, dead sea, and conrnish salt contain minerals that are excellent for soothing the skin.', suited_formulas:'Body scrubs, hand and foot scrubs'},
+    {name:'Rapadura sugar' , scientific_name:'Sucrose (rapadura)', image:'https://www.divinekarts.com/wp-content/uploads/2018/12/brown-sugar.jpg' , category:'Exfoliant' , description: 'A soft sugar which is rich in minerals contains properties which dissolves the bonds between dead skin cells which in turn encourages skin rejuvenation.', suited_formulas:'facial scrubs, body scrubs, hand and foot scrubs'},
+    {name:'Coffee grounds' , scientific_name:'Coffea', image:'https://i.ytimg.com/vi/xIBQGBYrbb8/maxresdefault.jpg' , category:'Exfoliant' , description: 'Coffee is packed with antioxidants that can help fight skin damage. Is fantastic for refreshing the skin and energising it', suited_formulas:'Face scrub, body scrub, hand and foot scrub'},
+    {name:'Lavender essential oil' , scientific_name:'Lavandula angustifolia', image:'https://www.stayathomemum.com.au/cache/860x380-0/wp-content/uploads/2011/08/lavender-oil-1-e1478324560879.jpg' , category:'Essential oil' , description: 'Beautiful aroma, lavender oil has great regenerative properties, not to mention antioxidant and anti-inflammatory effects', suited_formulas:'face care, body care, hair care'},
+    {name:'Peppermint essential oil' , scientific_name:'Mentha piperita', image:'https://davinawellness.com/wp-content/uploads/2016/07/pepperint-oil-1030x687.jpg' , category:'Essential oil' , description: 'This essential oil has a fantastic aroma, contains antimicrobial properties, great for targeting cellulite, anti-aging and even oily skin and hair', suited_formulas:'face care, hair care, body care'},
+    {name:'Jojoba Oil' , scientific_name:'Simmondsia chinensis seed oil', image:'https://reportshealthcare.com/wp-content/uploads/2018/04/Jojoba-oil-benefits-1140x700.jpg' , category:'Carrier oil' , description: 'Jojoba oil has the closest structural composition to our natural sebum. It is incredibly moisturising. Has anti-inflammatory, anti-microbial and anti-fungal effects. Penetrates into the skin and can regulate sebum production', suited_formulas:'moisturisers, cleansers, conditioners, scrubs, masks’},
+    {name:'Mango butter' , scientific_name:'Mangifera indica seed butter', image:'https://www.brambleberry.com/dw/image/v2/BCPL_PRD/on/demandware.static/-/Sites-brambleberry-master-catalog/default/dwb33b43a6/images/large/ingredients/butters/main/MangoButter_OIL8_Main_2018.07.BrambleBerry.Brent-077-Edit.jpg?sw=1000&sh=1000&sm=fit' , category:'Butter' , description: 'Mango butter is excellent for softening the skin and as a fast absorption rate. It is rich in vitamin E. Known to reduce the signs of aging.', suited_formulas:'Lip balms, body butters, scrubs, creams, hair care'},
+    {name:'Rosemary essential oil' , scientific_name:'Rosmarinus officinalis leaf oil', image:'http://sknatural.com/wp-content/uploads/2018/12/Rosemary1.jpg' , category:'Essential oil' , description: 'Fresh herbaceous aroma. Has anti-oxidant, anti-microbial and anti-inflammatory effects', suited_formulas:'Face care, hair care, body care'},
+    {name:'Cucumber' , scientific_name:'Cucumis sativus extract', image:'https://www.rare-beauty.co.uk/wp-content/uploads/2018/07/7-Days-%E2%80%93-7-Kg-Less-Cucumber-Diet-1-1.jpg' , category:'Active botanical' , description: 'Used for many skin care problems, helps with soothing irritated skin. Has healing, cooling and soothing properties', suited_formulas:'face toner,face mist, face cleansers, gels, shampoos, creams'}
 ])
 
 areas = Area.create([
@@ -245,7 +256,32 @@ ingredient_concerns = IngredientConcern.create([
     {ingredient_id:ingredients[8].id  ,concern_id:concerns[17].id },
     {ingredient_id:ingredients[8].id  ,concern_id:concerns[43].id },
     {ingredient_id:ingredients[9].id  ,concern_id:concerns[35].id },
-    {ingredient_id:ingredients[9].id  ,concern_id:concerns[40].id }
+    {ingredient_id:ingredients[9].id  ,concern_id:concerns[40].id },
+    {ingredient_id:ingredients[10].id  ,concern_id:concerns[40].id },
+    {ingredient_id:ingredients[10].id  ,concern_id:concerns[9].id },
+    {ingredient_id:ingredients[10].id  ,concern_id:concerns[33].id },
+    {ingredient_id:ingredients[11].id  ,concern_id:concerns[19].id },
+    {ingredient_id:ingredients[12].id  ,concern_id:concerns[17].id },
+    {ingredient_id:ingredients[13].id  ,concern_id:concerns[7].id },
+    {ingredient_id:ingredients[14].id  ,concern_id:concerns[1].id },
+    {ingredient_id:ingredients[14].id  ,concern_id:concerns[2].id },
+    {ingredient_id:ingredients[14].id  ,concern_id:concerns[7].id },
+    {ingredient_id:ingredients[14].id  ,concern_id:concerns[33].id },
+    {ingredient_id:ingredients[15].id  ,concern_id:concerns[37].id },
+    {ingredient_id:ingredients[15].id  ,concern_id:concerns[35].id },
+    {ingredient_id:ingredients[16].id  ,concern_id:concerns[37].id },
+    {ingredient_id:ingredients[16].id  ,concern_id:concerns[35].id },
+    {ingredient_id:ingredients[16].id  ,concern_id:concerns[19].id },
+    {ingredient_id:ingredients[17].id  ,concern_id:concerns[33].id },
+    {ingredient_id:ingredients[17].id  ,concern_id:concerns[32].id },
+    {ingredient_id:ingredients[18].id  ,concern_id:concerns[32].id },
+    {ingredient_id:ingredients[18].id  ,concern_id:concerns[2].id },
+    {ingredient_id:ingredients[19].id  ,concern_id:concerns[37].id },
+    {ingredient_id:ingredients[19].id  ,concern_id:concerns[35].id },
+    {ingredient_id:ingredients[20].id  ,concern_id:concerns[17].id },
+    {ingredient_id:ingredients[20].id  ,concern_id:concerns[18].id },
+    {ingredient_id:ingredients[20].id  ,concern_id:concerns[19].id },
+    {ingredient_id:ingredients[20].id  ,concern_id:concerns[0].id }
 ])
 
 
