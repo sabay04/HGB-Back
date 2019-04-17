@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.3.3'
+ruby '2.5.1'
 
 gem 'active_model_serializers', '~> 0.10.2'
 
@@ -26,6 +26,8 @@ gem 'jwt'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem "figaro"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
