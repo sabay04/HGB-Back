@@ -8,17 +8,17 @@
 
 
 
-Ingredient.destroy_all
-User.destroy_all
-Area.destroy_all
-Concern.destroy_all
-AreaConcern.destroy_all
-Category.destroy_all
-Formula.destroy_all
 Favourite.destroy_all
+AreaConcern.destroy_all
 FormulaConcern.destroy_all
 FormulaIngredient.destroy_all
 IngredientConcern.destroy_all
+Ingredient.destroy_all
+Formula.destroy_all
+User.destroy_all
+Category.destroy_all
+Area.destroy_all
+Concern.destroy_all
 
 
 users = User.create([
@@ -26,9 +26,6 @@ users = User.create([
     { username: 'Minha', password: "321", email: "minha@test.com"},
     { username: 'Saphie', password: "321", email: "saphie@test.com"}
   ])
-
-
-
 
 ingredients = Ingredient.create([
     {name:'Shea Butter' , scientific_name:'Vitellaria paradoxa', image:'http://dg.lnwfile.com/324yi4.jpg' , category:'Butter' , description: 'Shea Butter is extracted from the Kartie tree which predominantly grows in Ghana. This butter is known for its moisturising properties', suited_formulas:'Lip care, hair care, body creams, body scrubs, balms.'},
